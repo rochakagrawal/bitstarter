@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 var buf = new Buffer(100);
 
 var read_contents = fs.readFileSync('index.html');
-var display_contents = buf.toString();
+var display_contents = read_contents.toString();
 
 console.log(display_contents);
 
